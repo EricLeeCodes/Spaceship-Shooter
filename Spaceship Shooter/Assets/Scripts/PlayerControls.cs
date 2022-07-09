@@ -9,15 +9,29 @@ public class PlayerControls : MonoBehaviour
     //New way ***
     //[SerializeField] InputAction movement;
 
+
+    [Header("General Setup Settings")]
+
+    [Tooltip("How fast ship moves up and down based on player input")] 
     [SerializeField] float movementSpeed = 30f;
+
+    [Tooltip("How far horizontal movement goes")]
     [SerializeField] float xRange = 10f;
+
+    [Tooltip("How far vertical movement goes")]
     [SerializeField] float yRange = 7f;
 
+    [Header("Screen Position Based Tuning")]
     [SerializeField] float positionPitchFactor = 2f;
     [SerializeField] float controlPitchFactor = -2f;
+
+    [Header("Player input based tuning")]
     [SerializeField] float positionYawFactor = 3f;
     [SerializeField] float controlRollFactor = -20f;
 
+
+    [Header("Laser gun array")]
+    [Tooltip("Add all player laser here")]
     [SerializeField] GameObject[] lasers;
 
     float xThrow;
