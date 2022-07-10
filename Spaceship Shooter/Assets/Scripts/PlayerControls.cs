@@ -34,6 +34,8 @@ public class PlayerControls : MonoBehaviour
     [Tooltip("Add all player laser here")]
     [SerializeField] GameObject[] lasers;
 
+
+
     float xThrow;
     float yThrow;
 
@@ -107,8 +109,6 @@ public class PlayerControls : MonoBehaviour
             clampedYPosition,
             transform.localPosition.z);
 
-
-       
     }
 
 
@@ -128,4 +128,6 @@ public class PlayerControls : MonoBehaviour
 
         transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
     }
+
+
 }
