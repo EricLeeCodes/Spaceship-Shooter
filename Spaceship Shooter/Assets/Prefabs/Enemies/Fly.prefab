@@ -734,6 +734,7 @@ GameObject:
   - component: {fileID: 8655359814580711471}
   - component: {fileID: 8661847006030066823}
   - component: {fileID: 7170582679831888352}
+  - component: {fileID: 5520269770492841125}
   m_Layer: 0
   m_Name: Fly
   m_TagString: Untagged
@@ -819,11 +820,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53e925878e8dbcb4aa825bbf3da00ac2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathVFX: {fileID: 768148564940808439, guid: 725b5cee9f646fd4589f0cee2fa6dfd4, type: 3}
+  deathFX: {fileID: 768148564940808439, guid: 725b5cee9f646fd4589f0cee2fa6dfd4, type: 3}
   hitVFX: {fileID: 768148564940808439, guid: 12c655e6b4c948e47a5266953a83284f, type: 3}
-  parent: {fileID: 0}
   scorePerHit: 15
+  scorePerDeath: 100
   enemyHitPoints: 4
+--- !u!65 &5520269770492841125
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8673968851794605733}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.1566553, y: 2.955462, z: 10.7425585}
+  m_Center: {x: 0, y: -0.000011980534, z: 0}
 --- !u!1 &9032792791452864628
 GameObject:
   m_ObjectHideFlags: 0

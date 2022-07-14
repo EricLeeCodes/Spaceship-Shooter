@@ -1056,6 +1056,7 @@ GameObject:
   - component: {fileID: 4901396234536486111}
   - component: {fileID: 7197234486364139541}
   - component: {fileID: 6496221058313323540}
+  - component: {fileID: 6557477291330965473}
   m_Layer: 0
   m_Name: Hornet
   m_TagString: Untagged
@@ -1141,11 +1142,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53e925878e8dbcb4aa825bbf3da00ac2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathVFX: {fileID: 768148564940808439, guid: 725b5cee9f646fd4589f0cee2fa6dfd4, type: 3}
+  deathFX: {fileID: 768148564940808439, guid: 725b5cee9f646fd4589f0cee2fa6dfd4, type: 3}
   hitVFX: {fileID: 768148564940808439, guid: 12c655e6b4c948e47a5266953a83284f, type: 3}
-  parent: {fileID: 0}
   scorePerHit: 15
+  scorePerDeath: 100
   enemyHitPoints: 4
+--- !u!65 &6557477291330965473
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8710325419213279680}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.271937, y: 2.7247384, z: 12.217749}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8902993446511718502
 GameObject:
   m_ObjectHideFlags: 0

@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class CollisionHandler : MonoBehaviour
 {
     [SerializeField] float deathDelay = 2f;
     [SerializeField] ParticleSystem crashParticle;
     [SerializeField] MeshRenderer[] renderers = null;
-
-    bool isTransitioning;
-    bool collisionDisabled;
 
 
     void DeactivateRenderers()
@@ -24,22 +22,11 @@ public class CollisionHandler : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-        if (isTransitioning || collisionDisabled) { return; }
-
-        switch (other.gameObject.tag)
-        {
-            case "Friendly":
-             
-             break;
-            default:
-                StartCrashSequence();
-                break;
-        }
+        StartCrashSequence();
     }
 
     void StartCrashSequence()
     {
-        isTransitioning = true;
         crashParticle.Play();
         DeactivateRenderers();
         GetComponent<BoxCollider>().enabled = false;

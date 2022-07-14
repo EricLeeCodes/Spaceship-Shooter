@@ -1002,6 +1002,7 @@ GameObject:
   - component: {fileID: 8053710870004651560}
   - component: {fileID: 8061674776460841580}
   - component: {fileID: 8752806835023812178}
+  - component: {fileID: -4400694973491821010}
   m_Layer: 0
   m_Name: Carrier
   m_TagString: Untagged
@@ -1087,11 +1088,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53e925878e8dbcb4aa825bbf3da00ac2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathVFX: {fileID: 768148564940808439, guid: 725b5cee9f646fd4589f0cee2fa6dfd4, type: 3}
+  deathFX: {fileID: 768148564940808439, guid: 725b5cee9f646fd4589f0cee2fa6dfd4, type: 3}
   hitVFX: {fileID: 768148564940808439, guid: 12c655e6b4c948e47a5266953a83284f, type: 3}
-  parent: {fileID: 0}
   scorePerHit: 10
+  scorePerDeath: 100
   enemyHitPoints: 10
+--- !u!65 &-4400694973491821010
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8049205062541860702}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 11.115113, y: 2.7828712, z: 10.850533}
+  m_Center: {x: 0, y: -0.000013887882, z: 0.0000026226044}
 --- !u!1 &9153713588721137819
 GameObject:
   m_ObjectHideFlags: 0
